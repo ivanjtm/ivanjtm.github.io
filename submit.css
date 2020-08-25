@@ -1,0 +1,22 @@
+body{
+	font-family: helvetica;
+	color: white;
+	background-color: black;
+	font-weight: bold;
+}
+
+form{
+	font-size: 30px;
+	text-align: center;
+}
+
+input {
+	font-family: helvetica;
+	border-radius: 10px;
+}
+
+#boton {
+	color: white;
+	background-color: orange;
+	border-radius: 15px;
+}

@@ -1,0 +1,126 @@
+
+/*Cuerpos*/
+.inicio{
+  background-color: #F48FB1;
+}
+
+.fotos{
+  background-color: #90CAF9;
+}
+
+.gifs{
+  background-color: #FFE082;
+}
+
+.videos{
+  background-color: #C5E1A5;
+}
+
+.redes{
+  background-color: #FFAB91;
+}
+
+.decodificador{
+  background-color: #ce93d8;
+}
+
+
+
+/*navegacion*/
+.barra {
+  background-color: rgb(0,0,0.8);
+  width: 99%;
+  float: left;
+  height: 45px;
+  align-content: center;
+  overflow: hidden;
+  position: fixed;
+}
+
+.iconob {
+  width: 40px;
+  height: 40px;
+  padding: 2.5px;
+  float: left;
+}
+
+.barra a {
+  color: white;
+  font-family: nunito, helvetica;
+  text-decoration: none;
+  padding-left: 12px;
+  size: 30px;
+  padding: 14px 16px;
+  float: left;
+}
+
+.barra a:hover {
+  font-family: helvetica;
+}
+
+.barra .a:hover {
+  color: #F48FB1;
+}
+
+.barra .b:hover {
+  color: #90CAF9;
+}
+
+.barra .c:hover {
+  color: #FFE082;
+}
+
+.barra .d:hover {
+  color: #C5E1A5;
+}
+
+.barra .e:hover {
+  color: #FFAB91;
+}
+
+.barra .f:hover {
+  color: #ce93d8;
+}
+
+.barra .z {
+  float: right;
+}
+
+
+
+
+@-webkit-keyframes argh-my-eyes {
+    0%   { background-color: #fff; }
+    49% { background-color: #fff; }
+    50% { background-color: #000; }
+    99% { background-color: #000; }
+    100% { background-color: #fff; }
+  }
+
+@-moz-keyframes argh-my-eyes {
+    0%   { background-color: #fff; }
+    49% { background-color: #fff; }
+    50% { background-color: #000; }
+    99% { background-color: #000; }
+    100% { background-color: #fff; }
+  }
+
+@keyframes argh-my-eyes {
+    0%   { background-color: #fff; }
+    49% { background-color: #fff; }
+    50% { background-color: #000; }
+    99% { background-color: #000; }
+    100% { background-color: #fff; }
+  }
+
+.barra .g:hover {
+  -webkit-animation: argh-my-eyes 0.06s infinite;
+  -moz-animation:    argh-my-eyes 0.06s infinite;
+  animation:         argh-my-eyes 0.06s infinite;
+}
+
+
+body {
+  margin: 1;
+  font-family: nunito, helvetica;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>i v a n j t m | 𝚍𝚎𝚌𝚘𝚍𝚒𝚏𝚒𝚌𝚊𝚍𝚘𝚛</title>
+        <link rel="stylesheet" type="text/css" href="ivan.css">
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="decodificador.css">
+        <link rel="icon" href="icono.png" type="image/x-icon">
+</head>
+<script type="text/javascript">
+
+
+function encriptar(elemento){
+        var palabra = document.getElementsByTagName("input")[0].value;
+        var palabra_codificada = palabra.replace(/a/g, "110");
+        var palabra_codificada = palabra_codificada.replace(/b/g, "120");
+        var palabra_codificada = palabra_codificada.replace(/c/g, "130");
+        var palabra_codificada = palabra_codificada.replace(/d/g, "140");
+        var palabra_codificada = palabra_codificada.replace(/e/g, "150");
+        var palabra_codificada = palabra_codificada.replace(/f/g, "160");
+        var palabra_codificada = palabra_codificada.replace(/g/g, "170");
+        var palabra_codificada = palabra_codificada.replace(/h/g, "180");
+        var palabra_codificada = palabra_codificada.replace(/i/g, "210");
+        var palabra_codificada = palabra_codificada.replace(/j/g, "220");
+        var palabra_codificada = palabra_codificada.replace(/k/g, "230");
+        var palabra_codificada = palabra_codificada.replace(/l/g, "240");
+        var palabra_codificada = palabra_codificada.replace(/m/g, "250");
+        var palabra_codificada = palabra_codificada.replace(/n/g, "260");
+        var palabra_codificada = palabra_codificada.replace(/ñ/g, "270");
+        var palabra_codificada = palabra_codificada.replace(/o/g, "280");
+        var palabra_codificada = palabra_codificada.replace(/p/g, "310");
+        var palabra_codificada = palabra_codificada.replace(/q/g, "320");
+        var palabra_codificada = palabra_codificada.replace(/r/g, "330");
+        var palabra_codificada = palabra_codificada.replace(/s/g, "340");
+        var palabra_codificada = palabra_codificada.replace(/t/g, "350");
+        var palabra_codificada = palabra_codificada.replace(/u/g, "360");
+        var palabra_codificada = palabra_codificada.replace(/v/g, "370");
+        var palabra_codificada = palabra_codificada.replace(/w/g, "380");
+        var palabra_codificada = palabra_codificada.replace(/x/g, "410");
+        var palabra_codificada = palabra_codificada.replace(/y/g, "420");
+        var palabra_codificada = palabra_codificada.replace(/z/g, "430");
+        var palabra_codificada = palabra_codificada.replace(/ /g, "9");
+        var palabra_codificada = palabra_codificada.valueOf();
+
+        <?php
+           $palabra_codificada = $_POST[palabra_codificada];
+           $palabra_codificada = $palabra_codificada/$palabra_codificada;
+        ?>
+
+        document.getElementsByName("resultado")[0].value = palabra_codificada.toLocaleString('fullwide', {useGrouping:false}) ;
+}
+ 
+function desencriptar(elemento){
+        var palabra = document.getElementsByTagName("input")[0].value;
+        var palabra = palabra * 9;
+        var palabra = palabra.toLocaleString('fullwide', {useGrouping:false})
+        var palabra = palabra.toString();
+        var palabra_descodificada = palabra.replace(/9/g, " ");
+        var palabra_descodificada = palabra_descodificada.replace(/430/g, "z");
+        var palabra_descodificada = palabra_descodificada.replace(/420/g, "y");
+        var palabra_descodificada = palabra_descodificada.replace(/410/g, "x");
+        var palabra_descodificada = palabra_descodificada.replace(/380/g, "w");
+        var palabra_descodificada = palabra_descodificada.replace(/370/g, "v");
+        var palabra_descodificada = palabra_descodificada.replace(/360/g, "u");
+        var palabra_descodificada = palabra_descodificada.replace(/350/g, "t");
+        var palabra_descodificada = palabra_descodificada.replace(/340/g, "s");
+        var palabra_descodificada = palabra_descodificada.replace(/330/g, "r");
+        var palabra_descodificada = palabra_descodificada.replace(/320/g, "q");
+        var palabra_descodificada = palabra_descodificada.replace(/310/g, "p");
+        var palabra_descodificada = palabra_descodificada.replace(/280/g, "o");
+        var palabra_descodificada = palabra_descodificada.replace(/270/g, "ñ");
+        var palabra_descodificada = palabra_descodificada.replace(/260/g, "n");
+        var palabra_descodificada = palabra_descodificada.replace(/250/g, "m");
+        var palabra_descodificada = palabra_descodificada.replace(/240/g, "l");
+        var palabra_descodificada = palabra_descodificada.replace(/230/g, "k");
+        var palabra_descodificada = palabra_descodificada.replace(/220/g, "j");
+        var palabra_descodificada = palabra_descodificada.replace(/210/g, "i");
+        var palabra_descodificada = palabra_descodificada.replace(/180/g, "h");
+        var palabra_descodificada = palabra_descodificada.replace(/170/g, "g");
+        var palabra_descodificada = palabra_descodificada.replace(/160/g, "f");
+        var palabra_descodificada = palabra_descodificada.replace(/150/g, "e");
+        var palabra_descodificada = palabra_descodificada.replace(/140/g, "d");
+        var palabra_descodificada = palabra_descodificada.replace(/130/g, "c");
+        var palabra_descodificada = palabra_descodificada.replace(/120/g, "b");
+        var palabra_descodificada = palabra_descodificada.replace(/110/g, "a");
+        document.getElementsByName("resultado")[0].value = palabra_descodificada.toLocaleString('fullwide', {useGrouping:false}) ;
+}
+</script>
+<body class="decodificador">
+<div class="barra">
+        <img class="iconob" src="icono.png">
+        <a class="a" href="/index.html">Inicio</a>
+        <a class="b" href="/fotos.html">Fotos</a>
+        <a class="c" href="/gifs.html">Gifs</a>
+        <a class="d" href="/videos.html">Videos</a>
+        <a class="e" href="/redes.html">Redes</a>
+        <a class="f" href="/decodificador.html" class="active">Encriptador</a>
+
+</div>
+	<br>
+        <br>
+        <p>Introduzca el texto que desea encriptar o desencriptar y de click en la opcion deseada.</p>
+	<input type="text" size="25" >
+	<button type="submit" onclick="encriptar(this)">Encriptar</button>
+	<button type="submit" onclick="desencriptar(this)">Desencriptar</button>
+	<br><br>
+	<div class="resulta">
+		<p>Resultado:</p>
+	    <input type="text" id="caja" name="resultado" >
+	</div>
+</body>
+</html>

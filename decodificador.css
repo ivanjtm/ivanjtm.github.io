@@ -1,0 +1,24 @@
+body {
+	text-align: center;
+	font-family: Nunito, helvetica;
+	align-content: center;
+}
+
+button {
+	border-radius: 10px;
+}
+
+p {
+	font-size: 150%;
+}
+
+.resulta {
+
+	width: 90%;
+
+}
+
+
+#caja {
+	width: 80%;
+}
