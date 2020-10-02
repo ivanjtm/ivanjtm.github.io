@@ -9,14 +9,25 @@ const end = section.querySelector('h1');
 const controller = new ScrollMagic.Controller();
 
 //scenes
-const scene = new ScrollMagic.Scene({
-    duration: 1100,
+let scene = new ScrollMagic.Scene({
+    duration: 1000,
     triggerElement: intro,
     triggerHook: 0
 })
-.addIndicators()
+//.addIndicators()
 .setPin(intro)
 .addTo(controller);
+
+
+const textAnim = TweenMax.fromTo(text, 2, {opacity: 0}, {opacity: 1});
+
+// let scene2 = new ScrollMagic.Scene({
+//     duration: 1000,
+//     triggerElement: intro,
+//     triggerHook: 0
+// })
+// .setTween(textAnim)
+// .addTo(controller);
 
 //Video animation
 let accelAmount = 0.1;
