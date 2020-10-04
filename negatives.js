@@ -2,8 +2,8 @@ const intro = document.querySelector('.intro');
 const video = intro.querySelector('video');
 const text = intro.querySelector('h1');
 
-const section = document.querySelector('section');
-const end = section.querySelector('h1');
+const quoteSection = document.querySelector('.quoteSection');
+const end = quoteSection.querySelector('h1');
 
 const body = document.querySelector('body');
 
@@ -12,23 +12,23 @@ const controller = new ScrollMagic.Controller();
 
 //scenes
 let scene = new ScrollMagic.Scene({
-    duration: 1000,
+    duration: 1500,
     triggerElement: intro,
     triggerHook: 0
 })
-.addIndicators()
+//.addIndicators()
 .setPin(intro)
 .addTo(controller);
 
 
-const backgroundAnimation = TweenMax.fromTo(body, 5, {backgroundColor: "#000000"}, {backgroundColor: "#170000"});
+const backgroundAnimation = TweenMax.fromTo(body, 1, {backgroundColor: "#000000"}, {backgroundColor: "#180000"});
 
 let scene2 = new ScrollMagic.Scene({
     duration: 1000,
-    triggerElement: intro,
+    triggerElement: quoteSection,
     triggerHook: 0
 })
-.addIndicators()
+//.addIndicators()
 .setTween(backgroundAnimation)
 .addTo(controller);
 
