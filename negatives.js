@@ -16,7 +16,6 @@ let scene = new ScrollMagic.Scene({
     triggerElement: intro,
     triggerHook: 0
 })
-//.addIndicators()
 .setPin(intro)
 .addTo(controller);
 
@@ -28,7 +27,6 @@ let scene2 = new ScrollMagic.Scene({
     triggerElement: quoteSection,
     triggerHook: 0
 })
-//.addIndicators()
 .setTween(backgroundAnimation)
 .addTo(controller);
 
