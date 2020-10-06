@@ -31,9 +31,17 @@ body {
     text-shadow: 0px 0px 50px yellow;
 }
 
+.intro p {
+    visibility: collapse;
+    font-style: italic;
+    color: wheat;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
 section {
     height: 100vh;
-    color: black;
     color: white;
 }
 
@@ -43,11 +51,11 @@ section h1 {
     font-size: 60px;
 }
 
-.film {
+.photo {
     opacity: 30%;
     transition: opacity 1s;
 }
 
-.film:hover {
+.photo:hover {
     opacity: 100%;
 }
