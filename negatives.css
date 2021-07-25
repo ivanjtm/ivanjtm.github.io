@@ -5,8 +5,42 @@
 }
 
 body {
-    font-family: Helvetica;
+    font-family: Helvetica !important;
     background-color: black;
+    font-weight: bold !important;
+}
+
+h1 {
+    font-family: Helvetica !important;
+    font-weight: bold !important;
+}
+
+p {
+    font-family: Helvetica !important;
+    font-weight: bold !important;
+}
+
+@media screen and (max-width: 380px) {
+    .intro h1 {
+        font-size: 60px !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    section h1 {
+        font-size: 40px !important;
+    }
+
+    .mobile-alert {
+        visibility: visible !important;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    
+    .mobile-alert {
+        display: none !important;
+    }
 }
 
 .intro {
@@ -31,11 +65,10 @@ body {
     text-shadow: 0px 0px 50px yellow;
 }
 
-.intro p {
-    visibility: collapse;
+.intro .alerts {
+    position: absolute;
     font-style: italic;
     color: wheat;
-    position: absolute;
     top: 5%;
     left: 5%;
 }
@@ -46,16 +79,23 @@ section {
 }
 
 section h1 {
-    padding: 300px;
+    align-items: center;
     text-align: center;
     font-size: 60px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 .photo {
     opacity: 30%;
+    filter: invert(100%);
+    transition: filter 1s;
     transition: opacity 1s;
 }
 
 .photo:hover {
     opacity: 100%;
+    filter: invert(0%);
 }
